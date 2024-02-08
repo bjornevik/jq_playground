@@ -1,0 +1,474 @@
+{
+  "sha": "0e70f7a57e08b6229c41ab98d1d9a9bca46625be",
+  "node_id": "C_kwDOAE3WVdoAKDBlNzBmN2E1N2UwOGI2MjI5YzQxYWI5OGQxZDlhOWJjYTQ2NjI1YmU",
+  "commit": {
+    "author": {
+      "name": "Nicolas Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-10-05T03:28:24Z"
+    },
+    "committer": {
+      "name": "Nicolas Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-10-05T03:28:24Z"
+    },
+    "message": "Revert \"od -c => od -tc: od -c is an XSI extension equivalent to LC_CTYPE=C od -tc and not universally available\"\n\nThis reverts commit 0bce9fb8ed0fbaeba0901ff9778756e4e037cd47.",
+    "tree": {
+      "sha": "674325b10323dae990841d4e7d84541e5a58acf1",
+      "url": "https://api.github.com/repos/jqlang/jq/git/trees/674325b10323dae990841d4e7d84541e5a58acf1"
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/git/commits/0e70f7a57e08b6229c41ab98d1d9a9bca46625be",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/jqlang/jq/commits/0e70f7a57e08b6229c41ab98d1d9a9bca46625be",
+  "html_url": "https://github.com/jqlang/jq/commit/0e70f7a57e08b6229c41ab98d1d9a9bca46625be",
+  "comments_url": "https://api.github.com/repos/jqlang/jq/commits/0e70f7a57e08b6229c41ab98d1d9a9bca46625be/comments",
+  "author": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0bce9fb8ed0fbaeba0901ff9778756e4e037cd47",
+      "url": "https://api.github.com/repos/jqlang/jq/commits/0bce9fb8ed0fbaeba0901ff9778756e4e037cd47",
+      "html_url": "https://github.com/jqlang/jq/commit/0bce9fb8ed0fbaeba0901ff9778756e4e037cd47"
+    }
+  ]
+}
+{
+  "sha": "11c528d04d76c9b9553781aa76b073e4f40da008",
+  "node_id": "C_kwDOAE3WVdoAKDExYzUyOGQwNGQ3NmM5Yjk1NTM3ODFhYTc2YjA3M2U0ZjQwZGEwMDg",
+  "commit": {
+    "author": {
+      "name": "Nicolas Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-09-06T13:52:37Z"
+    },
+    "committer": {
+      "name": "Nico Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-09-06T19:05:10Z"
+    },
+    "message": "Add setlocale() call (fix #1740)",
+    "tree": {
+      "sha": "3eb4d21413cf215598675b4768d6afeb1f5d91ce",
+      "url": "https://api.github.com/repos/jqlang/jq/git/trees/3eb4d21413cf215598675b4768d6afeb1f5d91ce"
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/git/commits/11c528d04d76c9b9553781aa76b073e4f40da008",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/jqlang/jq/commits/11c528d04d76c9b9553781aa76b073e4f40da008",
+  "html_url": "https://github.com/jqlang/jq/commit/11c528d04d76c9b9553781aa76b073e4f40da008",
+  "comments_url": "https://api.github.com/repos/jqlang/jq/commits/11c528d04d76c9b9553781aa76b073e4f40da008/comments",
+  "author": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ac3b70d3a118713b24a82da15441788fee6c5d4e",
+      "url": "https://api.github.com/repos/jqlang/jq/commits/ac3b70d3a118713b24a82da15441788fee6c5d4e",
+      "html_url": "https://github.com/jqlang/jq/commit/ac3b70d3a118713b24a82da15441788fee6c5d4e"
+    }
+  ]
+}
+{
+  "sha": "ac3b70d3a118713b24a82da15441788fee6c5d4e",
+  "node_id": "C_kwDOAE3WVdoAKGFjM2I3MGQzYTExODcxM2IyNGE4MmRhMTU0NDE3ODhmZWU2YzVkNGU",
+  "commit": {
+    "author": {
+      "name": "Nicolas Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-09-05T23:49:55Z"
+    },
+    "committer": {
+      "name": "Nico Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-09-06T18:01:44Z"
+    },
+    "message": "Add a thank you note to the new owners, admins, and maintainers, and to @stedolan",
+    "tree": {
+      "sha": "5468b0c72cf6fe481882737e9a1b9eb48063d375",
+      "url": "https://api.github.com/repos/jqlang/jq/git/trees/5468b0c72cf6fe481882737e9a1b9eb48063d375"
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/git/commits/ac3b70d3a118713b24a82da15441788fee6c5d4e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/jqlang/jq/commits/ac3b70d3a118713b24a82da15441788fee6c5d4e",
+  "html_url": "https://github.com/jqlang/jq/commit/ac3b70d3a118713b24a82da15441788fee6c5d4e",
+  "comments_url": "https://api.github.com/repos/jqlang/jq/commits/ac3b70d3a118713b24a82da15441788fee6c5d4e/comments",
+  "author": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "df95871dd7415627bda6d70ce0569d0a4fbc22c6",
+      "url": "https://api.github.com/repos/jqlang/jq/commits/df95871dd7415627bda6d70ce0569d0a4fbc22c6",
+      "html_url": "https://github.com/jqlang/jq/commit/df95871dd7415627bda6d70ce0569d0a4fbc22c6"
+    }
+  ]
+}
+{
+  "sha": "df95871dd7415627bda6d70ce0569d0a4fbc22c6",
+  "node_id": "C_kwDOAE3WVdoAKGRmOTU4NzFkZDc0MTU2MjdiZGE2ZDcwY2UwNTY5ZDBhNGZiYzIyYzY",
+  "commit": {
+    "author": {
+      "name": "Nico Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-08-29T08:27:41Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2023-08-29T08:27:41Z"
+    },
+    "message": "Fix leak on too-large programs, OSS Fuzz issue 61349\n\nA very large program can cause these leaks:\r\n\r\n  ==758838== 7,820 (16 direct, 7,804 indirect) bytes in 2 blocks are definitely lost in loss record 17 of 28\r\n  ==758838==    at 0x4848A23: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)\r\n  ==758838==    by 0x125D30: jv_mem_calloc (jv_alloc.c:153)\r\n  ==758838==    by 0x162ADE: compile (compile.c:1286)\r\n  ==758838==    by 0x162D4B: compile (compile.c:1304)\r\n  ==758838==    by 0x163697: block_compile (compile.c:1381)\r\n  ==758838==    by 0x11B5CA: jq_compile_args (execute.c:1245)\r\n  ==758838==    by 0x115E20: main (main.c:691)\r\n  ==758838==\r\n  ==758838== 1,674,694 (103,576 direct, 1,571,118 indirect) bytes in 1,177 blocks are definitely lost in loss record 28 of 28\r\n  ==758838==    at 0x4843839: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)\r\n  ==758838==    by 0x125CD0: jv_mem_alloc (jv_alloc.c:141)\r\n  ==758838==    by 0x162B19: compile (compile.c:1289)\r\n  ==758838==    by 0x163697: block_compile (compile.c:1381)\r\n  ==758838==    by 0x11B5CA: jq_compile_args (execute.c:1245)\r\n  ==758838==    by 0x115E20: main (main.c:691)\r\n\r\nThis commit fixes that.\r\n\r\nFixes https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61349",
+    "tree": {
+      "sha": "12b2e38fc441fa5776668924dd402c66b98a7f2c",
+      "url": "https://api.github.com/repos/jqlang/jq/git/trees/12b2e38fc441fa5776668924dd402c66b98a7f2c"
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/git/commits/df95871dd7415627bda6d70ce0569d0a4fbc22c6",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk7av9CRBK7hj4Ov3rIwAAPh4IAJu++XhcRFUBFmklUzVAzmMg\nTRXnMmR/8n78NSNwOykFtenOFMuQDNr4zsh0WF9zX7yOHJrkn/C+ZzdjCMeTk5sZ\nN/aDrIpp2Gyhycupmrg3R+v43aEdFxI6fhpAgxjIA/WxkXECspyn9Pb720mbQ/HK\nBxg3B2Dyd5Gk9ruViQogUxKDCE4I5JcktYtS/lY7wxEFeJRvMk92MIyFQoDvlJjx\nGeQgIzxMVy413GaRB73fcQGhqBsTtcT2lG4LNJFpls7W9k3qp+TC2jFCs0EmSdpL\nZut2jML2m5b58TPSWGuAuN8KGTs8s90xO2QaXtLjweny4u7CKYLMDslJHxQi2WM=\n=vERD\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 12b2e38fc441fa5776668924dd402c66b98a7f2c\nparent 91d72575e43bf48e52e6bd9cac7db8b019ea3151\nauthor Nico Williams <nico@cryptonector.com> 1693297661 -0500\ncommitter GitHub <noreply@github.com> 1693297661 +0200\n\nFix leak on too-large programs, OSS Fuzz issue 61349\n\nA very large program can cause these leaks:\r\n\r\n  ==758838== 7,820 (16 direct, 7,804 indirect) bytes in 2 blocks are definitely lost in loss record 17 of 28\r\n  ==758838==    at 0x4848A23: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)\r\n  ==758838==    by 0x125D30: jv_mem_calloc (jv_alloc.c:153)\r\n  ==758838==    by 0x162ADE: compile (compile.c:1286)\r\n  ==758838==    by 0x162D4B: compile (compile.c:1304)\r\n  ==758838==    by 0x163697: block_compile (compile.c:1381)\r\n  ==758838==    by 0x11B5CA: jq_compile_args (execute.c:1245)\r\n  ==758838==    by 0x115E20: main (main.c:691)\r\n  ==758838==\r\n  ==758838== 1,674,694 (103,576 direct, 1,571,118 indirect) bytes in 1,177 blocks are definitely lost in loss record 28 of 28\r\n  ==758838==    at 0x4843839: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)\r\n  ==758838==    by 0x125CD0: jv_mem_alloc (jv_alloc.c:141)\r\n  ==758838==    by 0x162B19: compile (compile.c:1289)\r\n  ==758838==    by 0x163697: block_compile (compile.c:1381)\r\n  ==758838==    by 0x11B5CA: jq_compile_args (execute.c:1245)\r\n  ==758838==    by 0x115E20: main (main.c:691)\r\n\r\nThis commit fixes that.\r\n\r\nFixes https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61349\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/jqlang/jq/commits/df95871dd7415627bda6d70ce0569d0a4fbc22c6",
+  "html_url": "https://github.com/jqlang/jq/commit/df95871dd7415627bda6d70ce0569d0a4fbc22c6",
+  "comments_url": "https://api.github.com/repos/jqlang/jq/commits/df95871dd7415627bda6d70ce0569d0a4fbc22c6/comments",
+  "author": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "91d72575e43bf48e52e6bd9cac7db8b019ea3151",
+      "url": "https://api.github.com/repos/jqlang/jq/commits/91d72575e43bf48e52e6bd9cac7db8b019ea3151",
+      "html_url": "https://github.com/jqlang/jq/commit/91d72575e43bf48e52e6bd9cac7db8b019ea3151"
+    }
+  ]
+}
+{
+  "sha": "0e067ef93605493060392f0999be27694146fca4",
+  "node_id": "C_kwDOAE3WVdoAKDBlMDY3ZWY5MzYwNTQ5MzA2MDM5MmYwOTk5YmUyNzY5NDE0NmZjYTQ",
+  "commit": {
+    "author": {
+      "name": "Nicolas Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-08-04T05:04:57Z"
+    },
+    "committer": {
+      "name": "Emanuele Torre",
+      "email": "torreemanuele6@gmail.com",
+      "date": "2023-08-27T10:32:12Z"
+    },
+    "message": "Improve handling of non-integer numeric indices (fix #2815)",
+    "tree": {
+      "sha": "177d7d71e2e212a95b28a9596dfb01df8d07a4e6",
+      "url": "https://api.github.com/repos/jqlang/jq/git/trees/177d7d71e2e212a95b28a9596dfb01df8d07a4e6"
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/git/commits/0e067ef93605493060392f0999be27694146fca4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/jqlang/jq/commits/0e067ef93605493060392f0999be27694146fca4",
+  "html_url": "https://github.com/jqlang/jq/commit/0e067ef93605493060392f0999be27694146fca4",
+  "comments_url": "https://api.github.com/repos/jqlang/jq/commits/0e067ef93605493060392f0999be27694146fca4/comments",
+  "author": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "emanuele6",
+    "id": 20175435,
+    "node_id": "MDQ6VXNlcjIwMTc1NDM1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20175435?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/emanuele6",
+    "html_url": "https://github.com/emanuele6",
+    "followers_url": "https://api.github.com/users/emanuele6/followers",
+    "following_url": "https://api.github.com/users/emanuele6/following{/other_user}",
+    "gists_url": "https://api.github.com/users/emanuele6/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/emanuele6/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/emanuele6/subscriptions",
+    "organizations_url": "https://api.github.com/users/emanuele6/orgs",
+    "repos_url": "https://api.github.com/users/emanuele6/repos",
+    "events_url": "https://api.github.com/users/emanuele6/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/emanuele6/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ab47880b4c6a6cda55a4c6b93f7990baef990e1e",
+      "url": "https://api.github.com/repos/jqlang/jq/commits/ab47880b4c6a6cda55a4c6b93f7990baef990e1e",
+      "html_url": "https://github.com/jqlang/jq/commit/ab47880b4c6a6cda55a4c6b93f7990baef990e1e"
+    }
+  ]
+}
+{
+  "sha": "2c3561810d846efbf55de3b2444c78a8c125fc47",
+  "node_id": "C_kwDOAE3WVdoAKDJjMzU2MTgxMGQ4NDZlZmJmNTVkZTNiMjQ0NGM3OGE4YzEyNWZjNDc",
+  "commit": {
+    "author": {
+      "name": "Nicolas Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-08-25T00:25:07Z"
+    },
+    "committer": {
+      "name": "Nico Williams",
+      "email": "nico@cryptonector.com",
+      "date": "2023-08-25T15:13:46Z"
+    },
+    "message": "Check nomem_handler->handler before calling it",
+    "tree": {
+      "sha": "5134c4c71be2062476fd805a74d5183110bc684f",
+      "url": "https://api.github.com/repos/jqlang/jq/git/trees/5134c4c71be2062476fd805a74d5183110bc684f"
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/git/commits/2c3561810d846efbf55de3b2444c78a8c125fc47",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/jqlang/jq/commits/2c3561810d846efbf55de3b2444c78a8c125fc47",
+  "html_url": "https://github.com/jqlang/jq/commit/2c3561810d846efbf55de3b2444c78a8c125fc47",
+  "comments_url": "https://api.github.com/repos/jqlang/jq/commits/2c3561810d846efbf55de3b2444c78a8c125fc47/comments",
+  "author": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nicowilliams",
+    "id": 604851,
+    "node_id": "MDQ6VXNlcjYwNDg1MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/604851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicowilliams",
+    "html_url": "https://github.com/nicowilliams",
+    "followers_url": "https://api.github.com/users/nicowilliams/followers",
+    "following_url": "https://api.github.com/users/nicowilliams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicowilliams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicowilliams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicowilliams/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicowilliams/orgs",
+    "repos_url": "https://api.github.com/users/nicowilliams/repos",
+    "events_url": "https://api.github.com/users/nicowilliams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicowilliams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "70807e2b1b3643019f3283b94d61998b9b35ee0e",
+      "url": "https://api.github.com/repos/jqlang/jq/commits/70807e2b1b3643019f3283b94d61998b9b35ee0e",
+      "html_url": "https://github.com/jqlang/jq/commit/70807e2b1b3643019f3283b94d61998b9b35ee0e"
+    }
+  ]
+}

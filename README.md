@@ -58,6 +58,22 @@ You can use `pipe` _within_ the `jq`-filter!
 
 See [valid_messages.json](outputs/valid_messages.json) for result.
 
+## Filter queries
+
+You can also query the JSON through the filter.
+
+Say we want every commit where the authors name is longer than 15 characters
+
+`jq '.[] | select(.commit.author.name | length > 18)' < big.json > outputs/long_names.json` ([long_names.json](outputs/long_names.json))
+
+Or every commit where the authors name contains `Nico`
+
+`jq '.[] | select(.commit.author.name | contains("Nico"))' < big.json > outputs/nico.json` ([nico.json](outputs/nico.json))
+
+Or BOTH
+
+`jq '.[] | select((.commit.author.name | length > 15) and (.commit.author.name | contains("Nico")))' < big.json > outputs/long_nicos.json` ([long_nicos.json](outputs/long_nicos.json))
+
 ## Handling "invalid" JSON
 
 You can still often format and query JSON that's "invalid".
