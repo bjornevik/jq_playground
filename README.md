@@ -16,7 +16,7 @@ Repo for playing around with [jq](https://github.com/jqlang/jq).
 
 - `'.'` formats the json.
 - `< big.json` [big.json](big.json) as input.
-- `> copy.json` writes to [big_copy.json](big_copy.json).
+- `> big_copy.json` writes to [big_copy.json](big_copy.json).
 
 ### From pipe (cURL)
 
