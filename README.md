@@ -22,3 +22,9 @@ Repo for playing around with [jq](https://github.com/jqlang/jq).
 - `'.'` formats the json.
 - `> small.json` writes to `small.json`
 
+## Compact the JSON
+
+Use the flag `-c`
+`jq '.' -c < big.json > outputs/compacted.json`
+
+##
