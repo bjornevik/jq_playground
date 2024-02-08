@@ -4,6 +4,10 @@ Repo for playing around with [jq](https://github.com/jqlang/jq).
 
 ## Basics
 
+> [!NOTE]
+> This README.md outputs to files so that you can see the output without having to run the queries yourself.
+> If no output file is specified `jq` will output to the console.
+
 ### From local file
 
 [big.json](big.json) contains the last 1000 commits to the jq repo.
@@ -32,20 +36,47 @@ Use the flag `-c`
 
 See [compacted.json](outputs/compacted.json) for result.
 
-## Construct new JSON from existing JSON
+## Construct new file from existing JSON
 
-You can use `pipe` _within_ the `jq`-query!
+### Each line = value of a field
 
-`jq '.[] | {message: .commit.message}' < big.json > outputs/invalid_messages.json`
+You can use `pipe` _within_ the `jq`-filter!
 
-- `' [..] '` `jq`-query is contained in quotes
+`jq '.[] | .commit.message' < big.json > outputs/invalid_messages`
+
+- `''` `jq`-filter is contained in quotes
 - `.[]` selects the entire array
-- `|` pipes the array to the next part of the `jq`-query
-- `[{ message: .commit.message }]` creates new JSON that has 1 field `message` set to the value of the `commit.message` field in the original JSON.
+- `|` pipes the array to the next part of the `jq`-filter
+- `.commit.message` creates a new file where each line is equal to .commit.message
 
-This will **only** return the lines in an invalid format, see [invalid_messages.json](outputs/invalid_messages.json) for result.
-If you'd like to output a valid JSON-array you can wrap the entire query (the part enclosed in `''`) with square brackets:
+### Valid JSON
+
+> [!NOTE]
+> If you'd like to output a valid JSON-array that has to be specified in the `jq`-filter:
 
 `jq '[.[] | {message: .commit.message}]' < big.json > outputs/valid_messages.json`
 
 See [valid_messages.json](outputs/valid_messages.json) for result.
+
+## Handling "invalid" JSON
+
+You can still often format and query JSON that's "invalid".
+
+### Format
+
+```
+jq -c '.[] | {message: .commit.message}' < big.json \                                                                                                                                    ─╯
+| jq '.' > outputs/prettified_invalid.json
+```
+
+1. The first jq command creates a compacted output where each line is `{"message": "example"}`
+2. The second formats it and outputs to [prettified_invalid](outputs/prettified_invalid.json).
+
+### Query
+
+```
+jq '.[] | {message: .commit.message, sha: .sha}' < big.json | jq '.sha' > outputs/shas_from_invalid
+```
+
+1. The first jq command creates a compacted output where each line is `{"message": "example", "sha": "123afb"}`
+2. The second creates a new file where each line is a value from the sha field: [shas_from_invalid](outputs/shas_from_invalid).
