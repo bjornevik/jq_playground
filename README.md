@@ -64,17 +64,17 @@ See [valid_messages.json](outputs/valid_messages.json) for result.
 
 You can also query the JSON through the filter.
 
-Say we want every commit where the authors name is longer than 15 characters
+Say we want every commit where the authors name is shorter than 7 characters
 
-`jq '.[] | select(.commit.author.name | length > 18)' < big.json` ([long_names.json](outputs/long_names.json))
+`jq '.[] | select(.commit.author.name | length < 7)' < big.json` ([short_names.json](outputs/short_names.json))
 
 Or every commit where the authors name contains `Nico`
 
-`jq '.[] | select(.commit.author.name | contains("Nico"))' < big.json` ([nico.json](outputs/nico.json))
+`jq '.[] | select(.commit.author.name | ascii_downcase | contains("nico"))' < big.json` ([nico.json](outputs/nico.json))
 
-Or BOTH
+Or commits where the authors name is shorter than 7 characters AND contains an e
 
-`jq '.[] | select((.commit.author.name | length > 15) and (.commit.author.name | contains("Nico")))' < big.json` ([long_nicos.json](outputs/long_nicos.json))
+`jq '.[] | select((.commit.author.name | length < 7) and (.commit.author.name | ascii_downcase | contains("e")))' < big.json` ([short_e.json](outputs/long_nicos.json))
 
 ## Handling "invalid" JSON
 

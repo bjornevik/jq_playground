@@ -1,0 +1,79 @@
+{
+  "sha": "4c6f6dc2315103e4d4d81803744495ba396717a4",
+  "node_id": "C_kwDOAE3WVdoAKDRjNmY2ZGMyMzE1MTAzZTRkNGQ4MTgwMzc0NDQ5NWJhMzk2NzE3YTQ",
+  "commit": {
+    "author": {
+      "name": "Yeikel",
+      "email": "email@yeikel.com",
+      "date": "2023-09-15T11:09:07Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2023-09-15T11:09:07Z"
+    },
+    "message": "Add dependabot (#2889)",
+    "tree": {
+      "sha": "f61f4523d6b2ef6b79baf3fa9973f8a0837f0b5f",
+      "url": "https://api.github.com/repos/jqlang/jq/git/trees/f61f4523d6b2ef6b79baf3fa9973f8a0837f0b5f"
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/git/commits/4c6f6dc2315103e4d4d81803744495ba396717a4",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlBDtTCRBK7hj4Ov3rIwAA8M0IAAxWG3MvzLhxrREFEes+7Cs0\nzuksRURFJxN5bmAPNjrwz6ERrY29oU1BF/qmMmV+e6UFvzrRq5wAUevPUEeto0oQ\nJoNHqPy0/w4432W37BPAM0CpQbeK0m1Wp/wIHQfid+AjEh4QEBrsUZUGLtIrnIXk\nYm7SjcN99FlrXUO/BGlrE7jXwxuOc9zdbFiru2V4cE0wJnsRTPDPsqpFFwNpkqCF\nQDAxc0zP2gP9Og3zYvFxmWJt99LMXXefIaGEX+Vmwzg8XTWYcbSgEhYi0u1g35CF\nsWN9V4auhgYjbNm9O0DQusURcWuVlJ7YwilAO7Agkp27UNhqvxeXv91nOHH+bdw=\n=wQyq\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree f61f4523d6b2ef6b79baf3fa9973f8a0837f0b5f\nparent 5ea1a4ab3b97cd5f878af04b24abe9ec2d93088f\nauthor Yeikel <email@yeikel.com> 1694776147 -0400\ncommitter GitHub <noreply@github.com> 1694776147 +0900\n\nAdd dependabot (#2889)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/jqlang/jq/commits/4c6f6dc2315103e4d4d81803744495ba396717a4",
+  "html_url": "https://github.com/jqlang/jq/commit/4c6f6dc2315103e4d4d81803744495ba396717a4",
+  "comments_url": "https://api.github.com/repos/jqlang/jq/commits/4c6f6dc2315103e4d4d81803744495ba396717a4/comments",
+  "author": {
+    "login": "yeikel",
+    "id": 8935151,
+    "node_id": "MDQ6VXNlcjg5MzUxNTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8935151?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yeikel",
+    "html_url": "https://github.com/yeikel",
+    "followers_url": "https://api.github.com/users/yeikel/followers",
+    "following_url": "https://api.github.com/users/yeikel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yeikel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yeikel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yeikel/subscriptions",
+    "organizations_url": "https://api.github.com/users/yeikel/orgs",
+    "repos_url": "https://api.github.com/users/yeikel/repos",
+    "events_url": "https://api.github.com/users/yeikel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yeikel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5ea1a4ab3b97cd5f878af04b24abe9ec2d93088f",
+      "url": "https://api.github.com/repos/jqlang/jq/commits/5ea1a4ab3b97cd5f878af04b24abe9ec2d93088f",
+      "html_url": "https://github.com/jqlang/jq/commit/5ea1a4ab3b97cd5f878af04b24abe9ec2d93088f"
+    }
+  ]
+}
