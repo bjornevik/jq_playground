@@ -72,7 +72,7 @@ jq -c '.[] | {message: .commit.message}' < big.json \                           
 1. The first jq command creates a compacted output where each line is `{"message": "example"}`
 2. The second formats it and outputs to [prettified_invalid](outputs/prettified_invalid.json).
 
-### Query
+### Filter
 
 ```
 jq '.[] | {message: .commit.message, sha: .sha}' < big.json | jq '.sha' > outputs/shas_from_invalid
@@ -80,3 +80,9 @@ jq '.[] | {message: .commit.message, sha: .sha}' < big.json | jq '.sha' > output
 
 1. The first jq command creates a compacted output where each line is `{"message": "example", "sha": "123afb"}`
 2. The second creates a new file where each line is a value from the sha field: [shas_from_invalid](outputs/shas_from_invalid).
+
+## List all keys
+
+`jq '.[] | keys' < big.json > outputs/all_keys`
+
+Will output all **top-level** keys to [outputs/all_keys](outputs/all_keys)
