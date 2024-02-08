@@ -49,7 +49,7 @@ You can use `pipe` _within_ the `jq`-filter!
 - `|` pipes the array to the next part of the `jq`-filter
 - `.commit.message` creates a new file where each line is equal to .commit.message
 
-See [invalid_messages](outputs/invalid_messages) for result.
+See [messages](outputs/messages) for result.
 
 ### Valid JSON
 
