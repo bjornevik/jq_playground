@@ -32,7 +32,7 @@ Repo for playing around with [jq](https://github.com/jqlang/jq).
 
 Use the flag `-c`
 
-`jq '.' -c < big.json > outputs/compacted.json`
+`jq '.' -c < big.json`
 
 See [compacted.json](outputs/compacted.json) for result.
 
@@ -42,19 +42,21 @@ See [compacted.json](outputs/compacted.json) for result.
 
 You can use `pipe` _within_ the `jq`-filter!
 
-`jq '.[] | .commit.message' < big.json > outputs/invalid_messages`
+`jq '.[] | .commit.message' < big.json`
 
 - `''` `jq`-filter is contained in quotes
 - `.[]` selects the entire array
 - `|` pipes the array to the next part of the `jq`-filter
 - `.commit.message` creates a new file where each line is equal to .commit.message
 
+See [invalid_messages](outputs/invalid_messages) for result.
+
 ### Valid JSON
 
 > [!NOTE]
 > If you'd like to output a valid JSON-array that has to be specified in the `jq`-filter:
 
-`jq '[.[] | {message: .commit.message}]' < big.json > outputs/valid_messages.json`
+`jq '[.[] | {message: .commit.message}]' < big.json`
 
 See [valid_messages.json](outputs/valid_messages.json) for result.
 
@@ -64,15 +66,15 @@ You can also query the JSON through the filter.
 
 Say we want every commit where the authors name is longer than 15 characters
 
-`jq '.[] | select(.commit.author.name | length > 18)' < big.json > outputs/long_names.json` ([long_names.json](outputs/long_names.json))
+`jq '.[] | select(.commit.author.name | length > 18)' < big.json` ([long_names.json](outputs/long_names.json))
 
 Or every commit where the authors name contains `Nico`
 
-`jq '.[] | select(.commit.author.name | contains("Nico"))' < big.json > outputs/nico.json` ([nico.json](outputs/nico.json))
+`jq '.[] | select(.commit.author.name | contains("Nico"))' < big.json` ([nico.json](outputs/nico.json))
 
 Or BOTH
 
-`jq '.[] | select((.commit.author.name | length > 15) and (.commit.author.name | contains("Nico")))' < big.json > outputs/long_nicos.json` ([long_nicos.json](outputs/long_nicos.json))
+`jq '.[] | select((.commit.author.name | length > 15) and (.commit.author.name | contains("Nico")))' < big.json` ([long_nicos.json](outputs/long_nicos.json))
 
 ## Handling "invalid" JSON
 
@@ -81,24 +83,23 @@ You can still often format and query JSON that's "invalid".
 ### Format
 
 ```
-jq -c '.[] | {message: .commit.message}' < big.json \                                                                                                                                    ─╯
-| jq '.' > outputs/prettified_invalid.json
+jq -c '.[] | {message: .commit.message}' < big.json | jq '.'
 ```
 
 1. The first jq command creates a compacted output where each line is `{"message": "example"}`
-2. The second formats it and outputs to [prettified_invalid](outputs/prettified_invalid.json).
+2. The second formats it. Output found in [prettified_invalid](outputs/prettified_invalid.json).
 
 ### Filter
 
 ```
-jq '.[] | {message: .commit.message, sha: .sha}' < big.json | jq '.sha' > outputs/shas_from_invalid
+jq '.[] | {message: .commit.message, sha: .sha}' < big.json | jq '.sha'
 ```
 
 1. The first jq command creates a compacted output where each line is `{"message": "example", "sha": "123afb"}`
-2. The second creates a new file where each line is a value from the sha field: [shas_from_invalid](outputs/shas_from_invalid).
+2. The second selects all values from the sha-field. Output in [shas_from_invalid](outputs/shas_from_invalid).
 
 ## List all keys
 
-`jq '.[] | keys' < big.json > outputs/all_keys`
+`jq '.[] | keys' < big.json`
 
-Will output all **top-level** keys to [outputs/all_keys](outputs/all_keys)
+Will output all **top-level** keys. Output in [outputs/all_keys](outputs/all_keys)
