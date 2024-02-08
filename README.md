@@ -74,7 +74,7 @@ Or every commit where the authors name contains `Nico`
 
 Or commits where the authors name is shorter than 7 characters AND contains an e
 
-`jq '.[] | select((.commit.author.name | length < 7) and (.commit.author.name | ascii_downcase | contains("e")))' < big.json` ([short_e.json](outputs/long_nicos.json))
+`jq '.[] | select((.commit.author.name | length < 7) and (.commit.author.name | ascii_downcase | contains("e")))' < big.json` ([short_e.json](outputs/short_e.json))
 
 ## Handling "invalid" JSON
 
