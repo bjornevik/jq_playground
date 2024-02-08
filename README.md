@@ -49,6 +49,8 @@ You can use `pipe` _within_ the `jq`-filter!
 - `|` pipes the array to the next part of the `jq`-filter
 - `.commit.message` format of output; each line is set to the value of `[x].commit.message`
 
+Alternative syntax: `jq '.[].commit.message < big.json`.
+
 See [messages](outputs/messages) for result.
 
 ### Valid JSON
