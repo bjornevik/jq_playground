@@ -36,7 +36,7 @@ Use the flag `-c`
 
 See [compacted.json](outputs/compacted.json) for result.
 
-## Construct new file from existing JSON
+## Construct new structure from existing JSON
 
 ### Each line = value of a field
 
@@ -47,16 +47,20 @@ You can use `pipe` _within_ the `jq`-filter!
 - `''` `jq`-filter is contained in quotes
 - `.[]` selects the entire array
 - `|` pipes the array to the next part of the `jq`-filter
-- `.commit.message` creates a new file where each line is equal to .commit.message
+- `.commit.message` format of output; each line is set to the value of `[x].commit.message`
 
 See [messages](outputs/messages) for result.
 
 ### Valid JSON
 
 > [!NOTE]
-> If you'd like to output a valid JSON-array that has to be specified in the `jq`-filter:
+> If you'd like to output a valid JSON-array, you will have to construct a different output in the `jq`-filter:
 
 `jq '[.[] | {message: .commit.message}]' < big.json`
+
+- Wrapping the entire filter in `[]` will output a JSON-array
+- Then you `pipe` the array (`.[]`)
+- And you construct the new structure `{message: .commit.message}`, so that each entry in the array has that format.
 
 See [valid_messages.json](outputs/valid_messages.json) for result.
 
